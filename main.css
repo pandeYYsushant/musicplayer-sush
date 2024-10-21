@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input[type="range"] {
+    -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+    appearance: none; /* Removes default styling in other browsers */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+    appearance: none; /* Removes default styling in other browsers */
+    width: 16px; /* Width of the thumb */
+    height: 16px; /* Height of the thumb */
+    background: white; /* Color of the thumb */
+    border-radius: 50%; /* Rounded thumb */
+    cursor: pointer; /* Cursor style */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 16px; /* Width of the thumb */
+    height: 16px; /* Height of the thumb */
+    background: white; /* Color of the thumb */
+    border-radius: 50%; /* Rounded thumb */
+    cursor: pointer; /* Cursor style */
+}
