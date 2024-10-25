@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sush-Music</title>
         <link rel="stylesheet" href="main.css">
+        <!-- Add Tailwind CSS via CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -29,44 +30,7 @@
             }
         </script>
         <style>
-            .no-scrollbar::-webkit-scrollbar {
-                display: none;
-            }
-            .no-scrollbar {
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-            .hover\:scale-105:hover {
-                transform: scale(1.05);
-            }
-            .hover\:scale-110:hover {
-                transform: scale(1.1);
-            }
-            .hover\:scale-125:hover {
-                transform: scale(1.25);
-            }
-            .group:hover .group-hover\:opacity-50 {
-                opacity: 0.5;
-            }
-            .group:hover .group-hover\:opacity-100 {
-                opacity: 1;
-            }
-            input[type="range"]::-webkit-slider-thumb {
-                -webkit-appearance: none;
-                appearance: none;
-                width: 15px;
-                height: 15px;
-                background: white;
-                cursor: pointer;
-                border-radius: 50%;
-            }
-            input[type="range"]::-moz-range-thumb {
-                width: 15px;
-                height: 15px;
-                background: white;
-                cursor: pointer;
-                border-radius: 50%;
-            }
+            /* Your custom styles here */
         </style>
     </head>
     <body class="font-mullish m-0 p-0 bg-black box-border overflow-hidden h-screen flex flex-col flex-nowrap gap-2">
@@ -138,7 +102,7 @@
                 </a>
 
                 <a class="hover:scale-110 transition-all duration-300" href="login">
-                    <button class="text-black bg-white px-4 py-2 rounded-3xl font-bold">
+                    <button class= "text-dark-gray bg-white px-4 py-2 rounded-3xl font-bold">
                         <p class="px-3 py-1">Log in</p>
                     </button>
                 </a>
